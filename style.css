@@ -268,12 +268,116 @@ body {
     background: #f8f8f8;
 }
 
-.facilities-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
+.facilities-container {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: start;
+}
+
+.facilities-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.facility-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    transition: all 0.3s;
+}
+
+.facility-item:hover {
+    transform: translateX(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.facility-icon-small {
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(135deg, #d4af37 0%, #f4e4b7 100%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.facility-text h4 {
+    font-size: 1.2rem;
+    color: #1a1a1a;
+    margin-bottom: 0.3rem;
+}
+
+.facility-text p {
+    color: #666;
+    font-size: 0.95rem;
+}
+
+/* Gallery Section */
+.gallery-section {
+    position: sticky;
+    top: 100px;
+}
+
+.gallery-title {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.gallery-item {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.gallery-1 {
+    background-image: url('https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=800');
+}
+
+.gallery-2 {
+    background-image: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=800');
+}
+
+.gallery-3 {
+    background-image: url('https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?q=80&w=800');
+}
+
+.gallery-4 {
+    background-image: url('https://images.unsplash.com/photo-1578474846511-04ba529f0b88?q=80&w=800');
+}
+
+.gallery-5 {
+    background-image: url('https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?q=80&w=800');
+}
+
+.gallery-6 {
+    background-image: url('https://images.unsplash.com/photo-1590846406792-0adc7f938f1d?q=80&w=800');
 }
 
 .facility-card {
@@ -467,6 +571,7 @@ footer {
         display: none;
     }
 }
+
 
 
 
