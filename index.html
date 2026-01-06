@@ -2,76 +2,130 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Tugas</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafe Digital Nusantara</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #34495e;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            padding: 30px;
+        }
+
+        .section {
+            background-color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        .menu ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li {
+            padding: 8px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
 </head>
-
 <body>
-<form>
-    <input type="text">
-    <button>Kirim</button>
-</form>
 
-<label for="nama">Nama:</label>
-<input type="text" id="nama" placeholder="Tulis Nama Kamu">
+    <header>
+        <h1>Cafe Digital Nusantara</h1>
+        <p>Tempat Nongkrong Modern Bernuansa Budaya Indonesia</p>
+    </header>
 
-<!-- Untuk email (browser validasi format email) -->
-<input type="email" placeholder="email@gmail.com">
+    <nav>
+        <a href="#tentang">Tentang</a>
+        <a href="#menu">Menu</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
 
-<!-- Untuk password (tulisan jadi titik-titik) -->
-<input type="password" placeholder="Password">
+    <div class="container">
+        <div class="section" id="tentang">
+            <h2>Tentang Kami</h2>
+            <p>
+                Cafe Digital Nusantara adalah cafe modern yang menggabungkan
+                teknologi digital dengan cita rasa dan budaya khas Indonesia.
+                Cocok untuk belajar, bekerja, dan bersantai.
+            </p>
+        </div>
 
-<!-- RADIO BUTTON = Pilih SATU saja (○) -->
-<p>Jenis Kelamin:</p>
-<input type="radio" id="pria" name="gender" value="laki-laki">
-<label for="pria">Laki-laki</label>
+        <div class="section menu" id="menu">
+            <h2>Menu Favorit</h2>
+            <ul>
+                <li>Kopi Nusantara</li>
+                <li>Es Kopi Gula Aren</li>
+                <li>Teh Rempah Tradisional</li>
+                <li>Nasi Goreng Digital</li>
+                <li>Pisang Goreng Keju</li>
+            </ul>
+        </div>
 
-<input type="radio" id="wanita" name="gender" value="perempuan">
-<label for="wanita">Perempuan</label>
+        <div class="section" id="fasilitas">
+            <h2>Fasilitas</h2>
+            <p>
+                ☑ WiFi Cepat<br>
+                ☑ Stop Kontak di Setiap Meja<br>
+                ☑ Ruang Diskusi<br>
+                ☑ Musik Santai
+            </p>
+        </div>
 
-<!-- CHECKBOX = Pilih BANYAK (□) -->
-<p>Hobi:</p>
-<input type="checkbox" id="baca" name="hobi" value="membaca">
-<label for="baca">Membaca</label>
+        <div class="section" id="kontak">
+            <h2>Kontak Kami</h2>
+            <p>
+                Alamat: Jl. Nusantara No. 45<br>
+                Email: cafedigital@nusantara.id<br>
+                Telepon: 0812-3456-7890
+            </p>
+        </div>
+    </div>
 
-<input type="checkbox" id="olahraga" name="hobi" value="olahraga">
-<label for="olahraga">Olahraga</label>
+    <footer>
+        <p>&copy; 2026 Cafe Digital Nusantara</p>
+    </footer>
 
-<label for="kota">Kota:</label>
-<select id="kota" name="kota">
-  <option value="">-- Pilih Kota --</option>
-  <option value="bandung">Bandung</option>
-  <option value="tasikmalaya">Tasikmalaya</option>
-</select>
-
-<!-- NUMBER = Hanya angka -->
-<input type="number" min="1" max="100" step="1">
-
-<!-- DATE = Kalender tanggal -->
-<input type="date">
-
-<!-- FILE = Upload file/gambar -->
-<input type="file" accept=".jpg,.png,.pdf">
-
-<!-- COLOR = Pilih warna -->
-<input type="color" value="#3498db">
-
-<!-- SUBMIT = Kirim data form ke server -->
-<button type="submit">Daftar</button>
-
-<!-- RESET = Hapus semua isian -->
-<button type="reset">Hapus</button>
-
-<!-- REQUIRED = Wajib diisi -->
-<input type="text" required>
-
-<!-- DISABLED = Non-aktif (tidak bisa diisi) -->
-<input type="text" disabled value="Tidak bisa diubah">
-
-<!-- READONLY = Hanya baca (bisa dikirim) -->
-<input type="text" readonly value="Hanya baca">
-
-<!-- MAXLENGTH = Batas panjang karakter -->
-<input type="text" maxlength="50">
 </body>
 </html>
