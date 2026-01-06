@@ -53,9 +53,10 @@ body {
 /* Hero Section */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23222" width="1200" height="600"/><circle cx="400" cy="200" r="150" fill="%23333" opacity="0.3"/><circle cx="800" cy="400" r="200" fill="%23333" opacity="0.3"/></svg>');
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/herocontent.jpg');
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -465,3 +466,4 @@ footer {
         display: none;
     }
 }
+
