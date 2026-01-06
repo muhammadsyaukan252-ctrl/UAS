@@ -52,17 +52,7 @@ body {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('image/herocontent.jpg');
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-    position: relative;
 }
 
 .hero-content {
@@ -466,4 +456,5 @@ footer {
         display: none;
     }
 }
+
 
